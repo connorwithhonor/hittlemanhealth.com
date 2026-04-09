@@ -1,2 +1,0 @@
-# hittlemanhealth.com
-Hittleman Health
