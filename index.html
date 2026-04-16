@@ -1548,6 +1548,148 @@
             border: none;
         }
 
+        /* Metabolic Scan CTA Card (replaces old Fillout quiz) */
+        .scan-cta-wrap {
+            flex: 1;
+            min-height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+            background: linear-gradient(180deg, var(--eucalyptus-whisper) 0%, var(--cream) 100%);
+            border-radius: 15px;
+            border: 1px solid var(--eucalyptus-pale);
+            text-align: center;
+        }
+
+        .scan-cta-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(74, 107, 93, 0.15);
+        }
+
+        .scan-cta-icon svg {
+            width: 42px;
+            height: 42px;
+            stroke: var(--eucalyptus-dark);
+            fill: none;
+            stroke-width: 1.75;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .scan-cta-headline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.9rem;
+            color: var(--charcoal);
+            line-height: 1.25;
+            padding: 0 1rem;
+        }
+
+        .scan-cta-subtext {
+            color: var(--text-body);
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 440px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .scan-features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .scan-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            text-align: left;
+            color: var(--charcoal);
+            font-size: 0.95rem;
+        }
+
+        .scan-feature-check {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: var(--eucalyptus);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scan-feature-check svg {
+            width: 13px;
+            height: 13px;
+            stroke: white;
+            fill: none;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .scan-cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            background: var(--eucalyptus-dark);
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 1.15rem 2.25rem;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 30px rgba(74, 107, 93, 0.25);
+            max-width: 90%;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+
+        .scan-cta-button:hover {
+            background: var(--eucalyptus);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(74, 107, 93, 0.35);
+        }
+
+        .scan-cta-button svg {
+            width: 18px;
+            height: 18px;
+            stroke: white;
+            fill: none;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: transform 0.3s ease;
+        }
+
+        .scan-cta-button:hover svg {
+            transform: translateX(4px);
+        }
+
+        .scan-cta-fineprint {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        }
+
         /* Footer */
         .footer {
             background: var(--soft-black);
@@ -1800,7 +1942,7 @@
             <a href="#info" class="nav-cta">Get More Information</a>
             <a href="#booking" class="nav-cta">
                 <span class="label-long">Know Your Metabolic Health Score</span>
-                <span class="label-short">Free Metabolic Quiz</span>
+                <span class="label-short">Free Metabolic Scan</span>
             </a>
             <a class='nav-cta' href='/coach-opportunity'>Become a Coach</a>
         </div>
@@ -1822,7 +1964,7 @@
                         <a href="#info" class="hero-cta secondary">Get More Information</a>
                         <a href="#booking" class="hero-cta secondary">
                             <span class="label-long">Know Your Metabolic Health Score</span>
-                            <span class="label-short">Free Metabolic Quiz</span>
+                            <span class="label-short">Free Metabolic Scan</span>
                         </a>
                         <a class='hero-cta secondary' href='/coach-opportunity'>Become a Coach</a>
                     </div>
@@ -2468,16 +2610,38 @@
             </div>
             
             <div class="booking-grid">
-                <!-- Calendar Box -->
+                <!-- Metabolic Scan CTA Box -->
                 <div class="booking-box">
                     <div class="booking-header">
-                        <h2>Free Metabolic Quiz</h2>
-                        <p>Take this free metabolic health quiz to understand what may be affecting your energy, weight, cravings, and overall wellness.</p>
-                        <p>If you want a deeper personalized review after your results, Julie can help guide your next steps.</p>
+                        <h2>Free Metabolic Health Scan</h2>
+                        <p>A personalized look at what may be affecting your energy, weight, cravings, and overall wellness.</p>
+                        <p>Julie reviews every scan personally and follows up with your next steps.</p>
                     </div>
-                    <div class="calendar-embed">
-                        <div style="width:100%;height:500px;" data-fillout-id="2FJyT1CMHVus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
-                        <script src="https://server.fillout.com/embed/v1/"></script>
+                    <div class="scan-cta-wrap">
+                        <div class="scan-cta-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h3 class="scan-cta-headline">Know Your Metabolic Health Score in Minutes</h3>
+                        <p class="scan-cta-subtext">Answer a few quick questions and get your personalized metabolic health insights delivered straight to you.</p>
+                        <div class="scan-features">
+                            <div class="scan-feature">
+                                <div class="scan-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                <span>Takes about 3 to 5 minutes</span>
+                            </div>
+                            <div class="scan-feature">
+                                <div class="scan-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                <span>Instant personalized results</span>
+                            </div>
+                            <div class="scan-feature">
+                                <div class="scan-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                <span>Julie follows up with you personally</span>
+                            </div>
+                        </div>
+                        <a href="https://mymetabolicscan.com/scan/juliehittleman" target="_blank" rel="noopener" class="scan-cta-button">
+                            <span>Take Your Free Scan</span>
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <p class="scan-cta-fineprint">No cost. No credit card. Your info stays private.</p>
                     </div>
                 </div>
                 
