@@ -203,6 +203,9 @@
             background: var(--eucalyptus-dark);
             transform: translateY(-2px);
         }
+        @media (max-width: 768px) {
+            .nav-social a.nav-blog { display: none; }
+        }
 
         .nav-cta {
             display: inline-flex;
@@ -928,12 +931,14 @@
             <span></span>
         </button>
         <div class="nav-menu" id="navMenu">
+            <a class='nav-cta' href='/'>Home</a>
             <a class='nav-cta' href='/#info'>Get More Information</a>
             <a class='nav-cta' href='/#booking'>
                 <span class="label-long">Know Your Metabolic Health Score</span>
                 <span class="label-short">Free Metabolic Quiz</span>
             </a>
             <a class='nav-cta' href='/coach-opportunity'>Become a Coach</a>
+            <a class='nav-cta' href='https://blog.hittlemanhealth.com/blog' target="_blank" rel="noopener">Blog</a>
         </div>
     </nav>
 

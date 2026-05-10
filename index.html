@@ -342,6 +342,9 @@
             background: var(--eucalyptus-dark);
             transform: translateY(-2px);
         }
+        @media (max-width: 768px) {
+            .nav-social a.nav-blog { display: none; }
+        }
 
         .nav-cta {
             display: inline-flex;
@@ -1965,6 +1968,7 @@
                 <span class="label-short">Free Metabolic Scan</span>
             </a>
             <a class='nav-cta' href='/coach-opportunity'>Become a Coach</a>
+            <a class='nav-cta' href='https://blog.hittlemanhealth.com/blog' target="_blank" rel="noopener">Blog</a>
         </div>
     </nav>
 
@@ -2068,7 +2072,7 @@
     <div class="leaf-divider"><img src="https://storage.googleapis.com/msgsndr/7K1lyxN27dmrMR1dpBQX/media/696723e6a3a114be95089de8.png" alt=""></div>
 
     <!-- Story Section - WITH UPDATED IMAGE -->
-    <section class="section story-section fw">
+    <section class="section story-section fw" id="story">
         <div class="leaf leaf-6"><img src="https://storage.googleapis.com/msgsndr/7K1lyxN27dmrMR1dpBQX/media/696723e789a60eebbe37b335.png" alt=""></div>
         <div class="leaf leaf-7"><img src="https://storage.googleapis.com/msgsndr/7K1lyxN27dmrMR1dpBQX/media/696723e6b9e85c8ffb2a9609.png" alt=""></div>
         <div class="leaf leaf-20"><img src="https://storage.googleapis.com/msgsndr/7K1lyxN27dmrMR1dpBQX/media/696723e7a3a1146185089dea.png" alt=""></div>
@@ -2207,7 +2211,7 @@
     </section>
 
     <!-- UPDATED: Enhanced Testimonials Section -->
-    <section class="section testimonials-section fw">
+    <section class="section testimonials-section fw" id="success">
         <div class="container">
             <!-- Julie's Personal Story - PROMINENT DISPLAY (Above Header) -->
             <div style="background: var(--eucalyptus-pale); border-radius: 20px; padding: 2rem; margin-bottom: 4rem;">
@@ -2703,7 +2707,7 @@
                         <li><a href="#booking">Book a Consultation</a></li>
                         <li><a href="#booking">Contact</a></li>
                         <li><a href="#success">Success Stories</a></li>
-                        <li><a href="#">About Julie</a></li>
+                        <li><a href="#story">About Julie</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
